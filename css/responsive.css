@@ -112,7 +112,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .hero-main-content h1 {
         font-size: 24px;
         line-height: 32px;
@@ -174,9 +174,9 @@
 
 @media (max-width: 768px) {
     .category-container {
-         display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-        gap: 10px;
+        display: flex;         
+        flex-direction: column;
+        gap: 8px;              
         padding: 0 10px;
     }
     .category-card {
@@ -194,7 +194,7 @@
 }
 
 /* Small Mobile (<= 375px) */
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .category-container {
         display: flex;         
         flex-direction: column;
@@ -307,7 +307,7 @@ display: none;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
    .offer-image{
     width: 350px;
     
@@ -379,7 +379,7 @@ display: none;
     } 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .chocolates-container {
         grid-template-columns: 1fr; 
         margin: auto;
@@ -448,7 +448,7 @@ display: none;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .app-section-content {
     padding: 20px 15px;
   }
