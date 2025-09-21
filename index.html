@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwara Website Homepage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!----------------------------------------1. hero section----------------------------------------- -->
+    <section class="hero-section">
+        <div class="hero-container">
+
+            <header class="main-header">
+                <div class="logo">
+                    <img src="./assets/images/zwara-logo.png" alt="Zwara Logo">
+                </div>
+
+                <!-- Hamburger Checkbox -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger"></label>
+
+                <!-- Navigation -->
+                <nav class="main-nav">
+                    <!-- Nav links-->
+                    <ul>
+                        <li><a href="#"><img src="./assets/icons/Diamond.svg" alt="Influencer Icon"> Influencer</a></li>
+                        <li><a href="#"><img src="./assets/icons/Favourite.svg" alt="Favorite Icon"> Favourite</a></li>
+                        <li><a href="#"><img src="./assets/icons/cart.svg" alt="Cart Icon"> Cart</a></li>
+                        <li><a href="#"><img src="./assets/icons/Vector.svg" alt="Language Icon"> العربية</a></li>
+                    </ul>
+
+                    <!-- Signup button separate -->
+                    <button class="sign-up-btn">
+                        <img src="assets/icons/signup.svg" alt="Lock Icon"> Sign up / Log in
+                    </button>
+                </nav>
+            </header>
+            <div class="hero-main-content">
+                <h1>Order delicious food from your favorite restaurants.</h1>
+                <div class="search-form">
+                    <div class="location-input">
+                        <img src="./assets/icons/location.svg" alt="Location Icon">
+                        <input type="text" placeholder="Kuwait City, Kuwait" readonly>
+                    </div>
+                    <div class="restaurant-input">
+                        <img src="./assets/icons/Search.svg" alt="Search Icon">
+                        <input type="text" placeholder="Search restaurant">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="food-plate food-plate-left">
+            <img src="./assets/images/left-plate.png" class="rotate-right" alt="Delicious food on a plate">
+        </div>
+        <div class="food-plate food-plate-right">
+            <img src="./assets/images/right-plate.png" alt="Sushi on a platter">
+        </div>
+
+    </section>
+
+    <!---------------------------------2.  Welcome Section--------------------------------------->
+    <section class="welcome-section">
+        <div class="welcome-container">
+            <h2 class="welcome-title">Welcome! <span>Let's Sugar Up!</span></h2>
+            <div class="slider-wrapper">
+                <div class="slider-items">
+
+                    <div class="slider-item">
+                        <div class="circle">
+                            <img src="assets/images/mayyan-logo.png" alt="Mayyan Logo">
+                        </div>
+                        <span class="brand-name">MAYAN</span>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="circle">
+                            <img src="assets/images/tamra-logo.png" alt="Tamra Logo">
+                        </div>
+                        <span class="brand-name">Tamra</span>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="circle">
+                            <img src="assets/images/blere-logo.png" alt="Blere Logo">
+                        </div>
+                        <span class="brand-name">Blere</span>
+                    </div>
+                    <div class="slider-item">
+                        <div class="circle">
+                            <img src="assets/images/dgmaa-logo.png" alt="DGMAA Logo">
+                        </div>
+                        <span class="brand-name">DGMAA</span>
+                    </div>
+                    <div class="slider-item">
+                        <div class="circle">
+                            <img src="assets/images/oyo-logo.png" alt="OYO Logo">
+                        </div>
+                        <span class="brand-name">OYO</span>
+                    </div>
+                    <div class="slider-item">
+                        <div class="circle">
+                            <img src="assets/images/hive-logo.png" alt="Hive Logo">
+                        </div>
+                        <span class="brand-name">Hive</span>
+                    </div>
+                    <div class="slider-item">
+                        <div class="circle">
+                            <img src="assets/images/bi-logo.png" alt="Bi Logo">
+                        </div>
+                        <span class="brand-name">BI</span>
+                    </div>
+                    <div class="slider-item">
+                        <div class="circle">
+                            <img src="assets/images/ookee-logo.png" alt="Ookie Logo">
+                        </div>
+                        <span class="brand-name">Ookie</span>
+                    </div>
+                    <div class="slider-item">
+                        <div class="circle">
+                            <img src="assets/images/blackeye-logo.png" alt="Blackeye Logo">
+                        </div>
+                        <span class="brand-name">Blackeye</span>
+                    </div>
+                    <div class="slider-item">
+                        <div class="circle">
+                            <img src="assets/images/mango-logo.png" alt="Mango Logo">
+                        </div>
+                        <span class="brand-name">Mango</span>
+                    </div>
+                    <div class="slider-item">
+                        <div class="circle">
+                            <img src="assets/images/ward-logo.png" alt="Ward Logo">
+                        </div>
+                        <span class="brand-name">Ward N</span>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="circle">
+                            <img src="assets/images/mayyan-logo.png" alt="Ward Logo">
+                        </div>
+                        <span class="brand-name">MAYAN</span>
+                    </div>
+                </div>
+                <!-- The right navigation arrow-->
+                <div class="slider-nav">
+                    <img src="assets/icons/right-arrow.svg" alt="Scroll Right">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------------------------3 category section------------------------------------------ -->
+    <section class="category-section">
+        <div class="category-container">
+
+            <div class="category-card">
+                <span class="card-text">Offers</span>
+                <img src="./assets/icons/offer-icon.svg" alt="Offers Icon" class="card-icon special-icon">
+            </div>
+
+            <div class="category-card">
+                <span class="card-text">Newly Added</span>
+                <img src="./assets/icons/newly-added-icon.svg" alt="Newly Added Icon" class="card-icon special-icon">
+            </div>
+
+            <div class="category-card">
+                <span class="card-text">Delivery</span>
+                <img src="./assets/icons/delivery-icon.svg" alt="Delivery Icon" class="card-icon special-icon">
+            </div>
+
+            <div class="category-card">
+                <span class="card-text">Trends</span>
+                <img src="./assets/icons/trends-icon.svg" alt="Trends Icon" class="card-icon special-icon">
+            </div>
+
+            <div class="category-card">
+                <span class="card-text">Gifts</span>
+                <img src="./assets/icons/gifts-icon.svg" alt="Gifts Icon" class="card-icon special-icon">
+            </div>
+
+            <div class="category-card">
+                <span class="card-text">Catering</span>
+                <img src="./assets/icons/catering-icon.svg" alt="Catering Icon" class="card-icon special-icon">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- -----------------------------------4 food-categories-section----------------------------------->
+    <section class="food-categories-section">
+
+        <div class="category-slider-wrapper">
+            <div class="category-slider">
+                <div class="category-item">
+                    <img src="/assets/images/all-cousins.svg" alt="All Cousins" class="category-image">
+                    <span class="category-text">All Cousins</span>
+                </div>
+
+                <div class="category-item">
+                    <img src="/assets/images/cookies.svg" alt="Cookies" class="category-image">
+                    <span class="category-text">Cookies</span>
+                </div>
+
+                <div class="category-item">
+                    <img src="./assets/images/cheesecake.svg" alt="Cheesecake" class="category-image">
+                    <span class="category-text">Cheesecake</span>
+                </div>
+
+                <div class="category-item">
+                    <img src="./assets/images/waffle.svg" alt="Waffle" class="category-image">
+                    <span class="category-text">Waffle</span>
+                </div>
+
+                <div class="category-item">
+                    <img src="./assets/images/bakery.svg" alt="Bakery" class="category-image">
+                    <span class="category-text">Bakery</span>
+                </div>
+
+                <div class="category-item">
+                    <img src="./assets/images/donut.svg" alt="Donut" class="category-image">
+                    <span class="category-text">Donut</span>
+                </div>
+
+                <div class="category-item">
+                    <img src="./assets/images/coffee.svg" alt="Coffee" class="category-image">
+                    <span class="category-text">Coffee</span>
+                </div>
+
+                <div class="category-item">
+                    <img src="./assets/images/frozen-yoghurt.svg" alt="Frozen Yoghurt" class="category-image">
+                    <span class="category-text">Frozen Yoghurt</span>
+                </div>
+
+                <div class="category-item">
+                    <img src="./assets/images/crepe.svg" alt="Crepe" class="category-image">
+                    <span class="category-text">Crepe</span>
+                </div>
+
+                <div class="category-item">
+                    <img src="./assets/images/churros.svg" alt="Churros" class="category-image">
+                    <span class="category-text">Churros</span>
+                </div>
+            </div>
+
+            <div class="slider-arrow arrow-right">
+                <img src="./assets/icons/right-arrow.svg" alt="Right Arrow" class="arrow-icon">
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------ 5 Top Restaurants Near You Section----------------------------->
+
+    <section class="restaurants-section">
+        <div class="restaurants-header">
+            <h2 class="section-title">Top Restaurants Near You</h2>
+            <div class="header-arrows">
+                <div class="arrow left-arrow">&#10094;</div>
+                <div class="arrow right-arrow">&#10095;</div>
+            </div>
+        </div>
+
+        <div class="restaurants-container">
+            <!-- 1st card -->
+            <div class="restaurant-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/restaurant1.png" alt="Feeling Sugar" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div>
+                </div>
+                <div class="restaurant-logo-circle">
+                    <img src="./assets/images/feelingsugar-logo.png" alt="Feeling Sugar Logo" class="restaurant-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="restaurant-name">Feeling Sugar <span class="restaurant-rating">★ 4.5</span></h3>
+                    <p class="restaurant-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon">KD 1.00</span>
+                    </div>
+                    <div class="offer-label">
+                        <span>40% off on orders above KD 4.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd card -->
+            <div class="restaurant-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/restaurant2.png" alt="The Bakery Blere" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div>
+                    <div class="closed-overlay">Closed</div>
+                </div>
+                <div class="preorder-label">
+                    <span>PREORDER FOR LATER</span>
+                </div>
+                <div class="restaurant-logo-circle">
+                    <img src="./assets/images/blere-logo.png" alt="The Bakery Blere Logo" class="restaurant-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="restaurant-name">The Bakery Blere<span class="restaurant-rating">★ 4.5</span></h3>
+                    <p class="restaurant-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon"> KD 1.00</span>
+                    </div>
+                    <div class="offer-label">
+                        <span>40% off on orders above KD 4.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd card -->
+            <div class="restaurant-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/restaurant3.png" alt="The Bakery Blere" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div>
+                </div>
+                <div class="restaurant-logo-circle">
+                    <img src="./assets/images/bi-logo.png" alt="The Bakery Blere Logo" class="restaurant-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="restaurant-name">Feeling Sugar<span class="restaurant-rating">★ 4.5</span></h3>
+                    <p class="restaurant-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon"> KD 1.00</span>
+                    </div>
+                    <div class="offer-label">
+                        <span>40% off on orders above KD 4.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4th card -->
+            <div class="restaurant-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/restaurant3.png" alt="The Bakery Blere" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div>
+                </div>
+                <div class="restaurant-logo-circle">
+                    <img src="./assets/images/ookee-logo.png" alt="The Bakery Blere Logo" class="restaurant-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="restaurant-name">Ookie Cookie<span class="restaurant-rating">★ 4.5</span></h3>
+                    <p class="restaurant-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon"> KD 1.00</span>
+                    </div>
+                    <div class="offer-label">
+                        <span>40% off on orders above KD 4.00</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--------------------------------- 6 offer section ------------------------------>
+    <section class="offer-section">
+        <div class="offer-slider-wrapper">
+            <div class="offer-slider-arrow offer-arrow-left">
+                <img src="./assets/icons/left-arrow.svg" alt="Left Arrow" class="arrow-icon">
+            </div>
+            <div class="offer-slider">
+                <div class="offer-item">
+                    <img src="/assets/images/offer1.png" alt="Offer 1" class="offer-image">
+                </div>
+                <div class="offer-item">
+                    <img src="/assets/images/offer2.png" alt="Offer 2" class="offer-image">
+                </div>
+                <div class="offer-item">
+                    <img src="./assets/images/offer3.png" alt="Offer 3" class="offer-image">
+                </div>
+            </div>
+            <div class="offer-slider-arrow offer-arrow-right">
+                <img src="./assets/icons/right-arrow.svg" alt="Right Arrow" class="arrow-icon">
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------------7 Influencer Section--------------------------------------- -->
+    <section class="influencers-section">
+        <div class="section-header">
+            <h2>Our Influencers</h2>
+            <div class="header-arrows">
+                <div class="arrow left-arrow">&#10094;</div>
+                <div class="arrow right-arrow">&#10095;</div>
+            </div>
+        </div>
+
+        <div class="influencers-grid">
+            <!-- Card 1 -->
+            <div class="influencer-card">
+                <img src="assets/images/influencer1.png" alt="Influencer">
+                <p>Abeer Alatiyyah</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="influencer-card">
+                <img src="assets/images/influencer2.png" alt="Influencer">
+                <p>Abeer Alatiyyah</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="influencer-card">
+                <img src="assets/images/influencer3.png" alt="Influencer">
+                <p>Abeer Alatiyyah</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="influencer-card">
+                <img src="assets/images/influencer4.png" alt="Influencer">
+                <p>Abeer Alatiyyah</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="influencer-card">
+                <img src="assets/images/influencer5.png" alt="Influencer">
+                <p>Abeer Alatiyyah</p>
+            </div>
+        </div>
+    </section>
+
+
+
+<!------------ 8. Picks for you (same as restaurants section which I applied same class, css of that section)----------->
+
+    <section class="restaurants-section">
+        <div class="restaurants-header">
+            <h2 class="section-title">Picked For You</h2>
+            <div class="header-arrows">
+                <div class="arrow left-arrow">&#10094;</div>
+                <div class="arrow right-arrow">&#10095;</div>
+            </div>
+        </div>
+
+        <div class="restaurants-container">
+            <!-- 1st card -->
+            <div class="restaurant-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/restaurant1.png" alt="Feeling Sugar" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div>
+                </div>
+                <div class="restaurant-logo-circle">
+                    <img src="./assets/images/feelingsugar-logo.png" alt="Feeling Sugar Logo" class="restaurant-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="restaurant-name">Feeling Sugar <span class="restaurant-rating">★ 4.5</span></h3>
+                    <p class="restaurant-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon">KD 1.00</span>
+                    </div>
+                    <div class="offer-label">
+                        <span>40% off on orders above KD 4.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd card -->
+            <div class="restaurant-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/restaurant2.png" alt="The Bakery Blere" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div> 
+                </div>
+                <div class="restaurant-logo-circle">
+                    <img src="./assets/images/blere-logo.png" alt="The Bakery Blere Logo" class="restaurant-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="restaurant-name">The Bakery Blere<span class="restaurant-rating">★ 4.5</span></h3>
+                    <p class="restaurant-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon"> KD 1.00</span>
+                    </div>
+                    <div class="offer-label">
+                        <span>40% off on orders above KD 4.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd card -->
+            <div class="restaurant-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/restaurant3.png" alt="The Bakery Blere" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div>
+                </div>
+                <div class="restaurant-logo-circle">
+                    <img src="./assets/images/bi-logo.png" alt="The Bakery Blere Logo" class="restaurant-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="restaurant-name">Feeling Sugar<span class="restaurant-rating">★ 4.5</span></h3>
+                    <p class="restaurant-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon"> KD 1.00</span>
+                    </div>
+                    <div class="offer-label">
+                        <span>40% off on orders above KD 4.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4th card -->
+            <div class="restaurant-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/restaurant3.png" alt="The Bakery Blere" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div>
+                </div>
+                <div class="restaurant-logo-circle">
+                    <img src="./assets/images/ookee-logo.png" alt="The Bakery Blere Logo" class="restaurant-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="restaurant-name">Ookie Cookie<span class="restaurant-rating">★ 4.5</span></h3>
+                    <p class="restaurant-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon"> KD 1.00</span>
+                    </div>
+                    <div class="offer-label">
+                        <span>40% off on orders above KD 4.00</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<!-------------- 9. Chocolate Lovers  (same as restaurants section which I applied same class, css of that section)----------->
+
+     <section class="chocolates-section">
+        <div class="chocolates-header">
+            <h2 class="section-title">Chocolate Lovers</h2>
+            <div class="header-arrows">
+                <div class="arrow left-arrow">&#10094;</div>
+                <div class="arrow right-arrow">&#10095;</div>
+            </div>
+        </div>
+
+        <div class="chocolates-container">
+            <!-- 1st card -->
+            <div class="chocolate-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/chocolate1.png" alt="Feeling Sugar" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div>
+                </div>
+                <div class="discount-label">
+                    <span>40% Discount</span>
+                </div>
+                <div class="chocolate-logo-circle">
+                    <img src="./assets/images/oyo-logo.png" alt="Feeling Sugar Logo" class="chocolate-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="chocolate-name">OYO <span class="chocolate-rating">★ 4.5</span></h3>
+                    <p class="chocolate-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon">KD 1.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd card -->
+            <div class="chocolate-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/chocolate2.png" alt="The Bakery Blere" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div> 
+                </div>
+                <div class="discount-label">
+                    <span>40% Discount</span>
+                </div>
+                <div class="chocolate-logo-circle">
+                    <img src="./assets/images/hive-logo.png" alt="The Bakery Blere Logo" class="chocolate-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="chocolate-name">Hive<span class="chocolate-rating">★ 4.5</span></h3>
+                    <p class="chocolate-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon"> KD 1.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd card -->
+            <div class="chocolate-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/chocolate3.png" alt="The Bakery Blere" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div>
+                </div>
+                 <div class="discount-label">
+                    <span>40% Discount</span>
+                </div>
+                <div class="chocolate-logo-circle">
+                    <img src="./assets/images/ookee-logo.png" alt="The Bakery Blere Logo" class="chocolate-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="chocolate-name">Ookie Cookie<span class="chocolate-rating">★ 4.5</span></h3>
+                    <p class="chocolate-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon"> KD 1.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4th card -->
+            <div class="chocolate-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/chocolate1.png" alt="The Bakery Blere" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div>
+                </div>
+                 <div class="discount-label">
+                    <span>40% Discount</span>
+                </div>
+                <div class="chocolate-logo-circle">
+                    <img src="./assets/images/bi-logo.png" alt="The Bakery Blere Logo" class="chocolate-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="chocolate-name">Feeling Sugar<span class="chocolate-rating">★ 4.5</span></h3>
+                    <p class="chocolate-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon"> KD 1.00</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--------------------- 10. Delicious Deals (same as restaurants section which I applied same class, css of that section)-------->
+
+    <section class="restaurants-section">
+        <div class="restaurants-header">
+            <h2 class="section-title">Delicious Deals</h2>
+            <div class="header-arrows">
+                <div class="arrow left-arrow">&#10094;</div>
+                <div class="arrow right-arrow">&#10095;</div>
+            </div>
+        </div>
+
+        <div class="restaurants-container">
+            <!-- 1st card -->
+            <div class="restaurant-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/restaurant1.png" alt="Feeling Sugar" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div>
+                </div>
+                <div class="restaurant-logo-circle">
+                    <img src="./assets/images/feelingsugar-logo.png" alt="Feeling Sugar Logo" class="restaurant-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="restaurant-name">Feeling Sugar <span class="restaurant-rating">★ 4.5</span></h3>
+                    <p class="restaurant-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon">KD 1.00</span>
+                    </div>
+                    <div class="offer-label">
+                        <span>40% off on orders above KD 4.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd card -->
+            <div class="restaurant-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/restaurant2.png" alt="The Bakery Blere" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div> 
+                </div>
+                <div class="restaurant-logo-circle">
+                    <img src="./assets/images/blere-logo.png" alt="The Bakery Blere Logo" class="restaurant-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="restaurant-name">The Bakery Blere<span class="restaurant-rating">★ 4.5</span></h3>
+                    <p class="restaurant-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon"> KD 1.00</span>
+                    </div>
+                    <div class="offer-label">
+                        <span>40% off on orders above KD 4.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd card -->
+            <div class="restaurant-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/restaurant3.png" alt="The Bakery Blere" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div>
+                </div>
+                <div class="restaurant-logo-circle">
+                    <img src="./assets/images/bi-logo.png" alt="The Bakery Blere Logo" class="restaurant-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="restaurant-name">Feeling Sugar<span class="restaurant-rating">★ 4.5</span></h3>
+                    <p class="restaurant-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon"> KD 1.00</span>
+                    </div>
+                    <div class="offer-label">
+                        <span>40% off on orders above KD 4.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4th card -->
+            <div class="restaurant-card">
+                <div class="card-image-wrapper">
+                    <img src="./assets/images/restaurant3.png" alt="The Bakery Blere" class="card-image">
+                    <div class="wishlist-icon">
+                        <img src="./assets/icons/Wishlist.svg" alt="Wishlist Icon">
+                    </div>
+                </div>
+                <div class="restaurant-logo-circle">
+                    <img src="./assets/images/ookee-logo.png" alt="The Bakery Blere Logo" class="restaurant-logo">
+                </div>
+                <div class="card-content">
+                    <h3 class="restaurant-name">Ookie Cookie<span class="restaurant-rating">★ 4.5</span></h3>
+                    <p class="restaurant-details">Chinese, Mongolian, Noodles, Soup</p>
+                    <div class="details-bottom">
+                        <span class="distance">24-34 min &nbsp; 1.4 km</span>
+                        <span class="price"><img src="./assets/icons/delivery-car.svg" alt="Delivery Car Icon"
+                                class="delivery-icon"> KD 1.00</span>
+                    </div>
+                    <div class="offer-label">
+                        <span>40% off on orders above KD 4.00</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- ------------------------------------11 Mobile app Section--------------------------------------- -->
+<section class="mobile-app-section">
+  <div class="app-container">
+    <div class="app-section-content">
+      <div class="app-info">
+        <h1>Mobile App</h1>
+        <p>Download the ZWARA app on your mobile device for a more <br>convenient and efficient ordering and delivery experience</p>
+        <div class="download-buttons">
+          <img src="assets/images/app-store.svg" alt="Download on the App Store">
+          <img src="assets/images/google-play-store.svg" alt="Get it on Google Play">
+        </div>
+      </div>
+    </div>
+    <div class="phone-mockup">
+      <img src="assets/images/mobile-img.png" alt="Phone Mockup">
+    </div>
+    <!-- Z Logo -->
+    <img src="assets/images/z-logo.svg" alt="Decorative Z Logo" class="z-img">
+  </div>
+</section>
+
+
+<!---------------------------------------------12 Footer------------------------------------------------- -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-columns">
+      <!-- 1st Column -->
+      <div class="footer-col">
+        <h3>POPULAR</h3>
+        <ul>
+          <li>Healthy</li>
+          <li>Milk Shake</li>
+          <li>Cheesecake</li>
+          <li>Frozen Yoghurt</li>
+          <li>Waffle</li>
+          <li>Coffee</li>
+          <li>Arabic Sweet</li>
+        </ul>
+      </div>
+
+      <!-- 2nd Column -->
+      <div class="footer-col">
+        <h3>EXPLORE</h3>
+        <ul>
+          <li>Restaurants</li>
+          <li>Influencer</li>
+          <li>Offers</li>
+          <li>Newly Added</li>
+          <li>Delivery</li>
+          <li>Trends</li>
+          <li>Ya Hala</li>
+        </ul>
+      </div>
+
+      <!-- 3rd Column -->
+      <div class="footer-col">
+        <h3>CUSTOMER ACCOUNT</h3>
+        <ul>
+          <li>Orders</li>
+          <li>Gifts</li>
+          <li>Invite Friends</li>
+          <li>Favourites</li>
+          <li>Addresses</li>
+          <li>My Loyalty</li>
+          <li>Zwara Credits</li>
+        </ul>
+      </div>
+
+      <!-- 4th Column -->
+      <div class="footer-col">
+        <h3>HELP & SUPPORT</h3>
+        <ul>
+          <li>About Us</li>
+          <li>Faq’s</li>
+          <li>How to Order</li>
+          <li>Privacy Statement</li>
+          <li>Terms of Use</li>
+          <li>Data Deletion Policy</li>
+          <li>Feedback</li>
+        </ul>
+      </div>
+
+      <!-- 5th Column -->
+      <div class="footer-col contact">
+        <h3>CONTACT US</h3>
+        <p>Whatsapp Us:+965 869878955</p>
+        <p>Call Us On: +965 869878955</p>
+        <p>Email: @zwara.com</p>
+        <p>8:00 AM to 8:00 PM, 365 days</p>
+        <p>Should you encounter any bugs, delayed deliveries, or other problems on the website.</p>
+      </div>
+
+      <!-- 6th Column -->
+      <div class="footer-col app-download">
+        <h3>DOWNLOAD THE APP</h3>
+        <div class="store-buttons">
+          <img src="./assets/images/google-play-store.svg" alt="Play Store">
+          <img src="./assets/images/app-store.svg" alt="App Store">
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img src="./assets/images/zwara-logo.png" alt="Zwara Logo">
+        <p>© 2025 Zwara. All Rights Reserved.</p>
+      </div>
+      <div class="footer-social">
+        <span>Follow us</span>
+        <a href="#"><img src="./assets/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="./assets/icons/insta.svg" alt="Instagram"></a>
+        <a href="#"><img src="./assets/icons/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="./assets/icons/whatsapp.svg" alt="Whatsapp"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

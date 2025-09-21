@@ -1,0 +1,515 @@
+/* --- Responsive Breakpoints --- */
+
+/* --------------------------------1. hero section-- ----------------------------*/
+/* Tablet (<= 1024px) */
+@media (max-width: 1024px) {
+    .hero-main-content h1 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .food-plate img {
+        max-width: 250px;
+    }
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        right: 20px;
+        background: white;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+        border-radius: 10px;
+        display: none; 
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 999;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Show menu when checkbox checked */
+    .menu-toggle:checked ~ .main-nav {
+        display: flex;
+    }
+
+    /* Change hamburger to cross when menu open */
+    .menu-toggle:checked + .hamburger::before {
+        content: "✖";
+        color: white;
+    }
+
+    .main-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .main-nav a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        color: black;
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .main-nav a:hover {
+        background: #ED145A;
+        color: white;
+    }
+
+    .main-nav a:hover img {
+        filter: brightness(0) invert(1); 
+    }
+
+
+    .main-nav .sign-up-btn {
+        background: white;
+        color: black;
+        border-radius: 12px;
+        padding: 10px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background 0.3s ease;
+    }
+
+    .main-nav .sign-up-btn:hover {
+        background: #f0f0f0;
+        color: black;
+    }
+
+  
+    .hero-main-content h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .search-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .food-plate img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero-main-content h1 {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 0 10px;
+    }
+    .location-input, .restaurant-input {
+        width: 100%;
+    }
+    .food-plate img {
+        max-width: 150px;
+    }
+}
+
+
+/* ---------------------------2  Welcome Section ------------------ */
+@media (max-width: 1440px) {
+    .welcome-container {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .welcome-container {
+        padding: 0 20px;
+    }
+    .slider-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-title {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+
+/*--------------------------------3 Category tablet & Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .category-container {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+        height: auto;
+        padding: 10px 10px;
+    }
+    .category-card {
+        width: 100%;
+    }
+    .card-text {
+        font-size: 16px; 
+    }
+    .card-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-container {
+         display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+        padding: 0 10px;
+    }
+    .category-card {
+        width: 100%;
+    max-width: 300px;
+    margin: 0 auto; 
+    }
+    .card-text {
+        font-size: 16px;
+    }
+    .card-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Small Mobile (<= 375px) */
+@media (max-width: 375px) {
+     .category-container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 10px;
+        padding: 0 10px;
+    }
+    .category-card {
+        width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    }
+    .card-text {
+        font-size: 16px;
+    }
+    .card-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* ------------------------------------4 food category-----------------------  */
+@media (max-width: 1024px) {
+    .category-slider-wrapper {
+        padding: 0;
+    }
+    .slider-arrow {
+        display: none;
+    }
+    
+}
+@media (max-width: 756px) {
+    .category-item {
+        min-width: 120px;
+        height: 150px;
+    }
+
+    .category-image {
+        width: 110px;
+        height: 110px;
+    }
+
+    .category-text {
+        font-size: 16px;
+    }
+}
+
+
+
+/* --------------------5 Top Restaurants Near You --------------------- */
+
+@media (max-width: 756px) {
+  .restaurants-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        overflow-x: auto; 
+    }
+    .header-arrows{
+display: none;
+    }
+    .restaurants-header h2{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .restaurants-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    } 
+}
+
+
+
+/* --------------------------6 Offer Section --------------------------------- */
+
+@media (max-width: 767px) {
+    .offer-slider {
+        padding: 0 10px; 
+    }
+    .offer-item {
+        width: 65%; 
+        height: auto;
+    }
+    .offer-image {
+        width: 85%;
+        height: auto;
+    }
+    .offer-slider-arrow {
+        display: none; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .offer-slider {
+        padding: 0 20px; 
+    }
+    .offer-item {
+        width: calc(50% - 15px);
+        height: auto;
+    }
+    .offer-image {
+        width: 85%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .offer-item {
+        width: 400px;
+    }
+}
+
+@media (max-width: 375px) {
+   .offer-image{
+    width: 350px;
+    
+   }
+  
+}
+
+
+/* ------------------------------7 influencer ----------------- */
+@media (max-width: 1024px) {
+  .influencers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-header h2 {
+    font-size: 22px;
+  }
+  .header-arrows{
+    display: none;
+  }
+  .section-header h2 {
+  margin: auto;
+}
+}
+
+@media (max-width: 768px) {
+  .influencers-section {
+    padding: 20px;
+  }
+  .influencers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .influencer-card img {
+    max-width: 200px;
+    height: auto;
+  }
+  .section-header h2 {
+    font-size: 20px;
+  }
+  .influencer-card p {
+    font-size: 16px;
+  }
+    .section-header h2 {
+  margin: auto;
+}
+}
+
+/*----------------- 8. Picks for you (same as restaurants section which I applied same class, css of that section)-------> */
+
+/*----------------- 9. Chocolate Lovers -------> */
+
+@media (max-width: 756px) {
+  .restaurants-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        overflow-x: auto; 
+    }
+    .header-arrows{
+display: none;
+    }
+    .restaurants-header h2{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .restaurants-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin: auto;
+    } 
+}
+
+@media (max-width: 375px) {
+    .restaurants-container {
+        grid-template-columns: 1fr; 
+        gap: 10px;                 
+    }
+    .restaurants-header h2 {
+        font-size: 10px;           
+    }
+    .header-arrows {
+        display: none;              
+    }
+}
+
+
+
+
+/* <!------- 10. Delicious Deals (same as restaurants section which I applied same class, css of that section)-------------> */
+
+/* -------------------------------11 Mobile app Section----------------- */
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .app-section-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .phone-mockup {
+    position: relative;
+    top: -30px;
+    right: 0;
+    bottom: -30px;
+  }
+  .phone-mockup img {
+    margin-top: 30px;
+    width: 50%;
+    height: 50%;
+  }
+  .download-buttons {
+ margin: auto;
+}
+  .z-img {
+    width: 80px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-info h1 {
+    font-size: 1.8rem;
+  }
+  .phone-mockup img {
+    width: 300px;
+  }
+  .z-img {
+    width: 90px;
+    bottom: 5px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .app-section-content {
+    padding: 20px 15px;
+  }
+
+  .app-info h1 {
+    font-size: 1.4rem;
+  }
+
+  .app-info p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .phone-mockup img {
+    width: 220px;
+    height: auto;
+  }
+
+  .download-buttons {
+    flex-direction: column; /* stack buttons */
+    gap: 10px;
+    align-items: center;
+  }
+
+  .z-img {
+    width: 70px;
+    bottom: 5px;
+    right: 5px;
+  }
+}
+
+
+/* ----------------------------------10 footer------------------------------------------------ */
+@media (max-width: 1200px) {
+  .footer-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .app-download .store-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-columns {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .app-download .store-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
