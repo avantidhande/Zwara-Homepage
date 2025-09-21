@@ -195,23 +195,24 @@
 
 /* Small Mobile (<= 375px) */
 @media (max-width: 375px) {
-     .category-container {
-        display: grid;
-        grid-template-columns: 1fr; 
-        gap: 10px;
+    .category-container {
+        display: flex;         
+        flex-direction: column;
+        gap: 8px;              
         padding: 0 10px;
     }
     .category-card {
         width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
+        max-width: 250px;      
+        margin: 0 auto;
+        padding: 8px;         
     }
     .card-text {
-        font-size: 16px;
+        font-size: 14px;      
     }
     .card-icon {
-        width: 40px;
-        height: 40px;
+        width: 35px;           
+        height: 35px;
     }
 }
 
@@ -359,36 +360,44 @@ display: none;
 /*----------------- 9. Chocolate Lovers -------> */
 
 @media (max-width: 756px) {
-  .restaurants-container {
+  .chocolates-container {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         overflow-x: auto; 
     }
     .header-arrows{
-display: none;
+        display: none;
     }
-    .restaurants-header h2{
+    .chocolates-header h2{
         font-size: 10px;
     }
 }
 
 @media (min-width: 1024px) {
-    .restaurants-container {
+    .chocolates-container {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         margin: auto;
     } 
 }
 
 @media (max-width: 375px) {
-    .restaurants-container {
+    .chocolates-container {
         grid-template-columns: 1fr; 
+        margin: auto;
         gap: 10px;                 
     }
-    .restaurants-header h2 {
+    .chocolates-header h2 {
         font-size: 10px;           
     }
     .header-arrows {
         display: none;              
     }
+   /* --- Card Styles --- */
+.chocolate-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+
+}
 }
 
 

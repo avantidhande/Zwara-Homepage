@@ -738,7 +738,7 @@ letter-spacing: 0%;
 
 /* -------------------------------------- 7 Influencers ------------------------- */
 .influencers-section {
-  background-color: #ffe5f0; /* light pink */
+  background-color: #ffe5f0; 
   padding: 30px 100px;
   border-radius: 10px;
   max-width: 1920px;
@@ -790,12 +790,16 @@ margin-left: 30px;
 
 
 /* ------------------------------9 Chocolate Lovers Section Style ---------------------- */
+.main-choco{
+  background-color: #ffe5f0;
+  max-width: 1920px;
+
+}
 .chocolates-section {
-    background-color: #ffe5f0;
-    width: 100%;
-    max-width: 1920px;
+     width: 100%;
+    max-width: 1300px;
     margin: 0 auto;
-      padding: 30px 100px;
+    padding: 20px 0;
 }
 
 .chocolates-header {
