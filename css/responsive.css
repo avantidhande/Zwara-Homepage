@@ -266,6 +266,29 @@ display: none;
     } 
 }
 
+@media (max-width: 375px) {
+    .restaurants-container {
+        grid-template-columns: 1fr; 
+        margin: auto;
+        gap: 10px;                 
+    }
+    .restaurants-header h2 {
+        font-size: 10px;           
+    }
+    .header-arrows {
+        display: none;              
+    }
+.restaurants-card {
+    position: relative;
+    width: 270px;
+    height: 350px;
+
+}
+.details-bottom{
+  font-size: 12px;
+}
+}
+
 
 
 /* --------------------------6 Offer Section --------------------------------- */
@@ -395,8 +418,30 @@ display: none;
 .chocolate-card {
     position: relative;
     width: 300px;
-    height: 300px;
+    height: 320px;
 
+}
+}
+@media (max-width: 375px) {
+    .chocolates-container {
+        grid-template-columns: 1fr; 
+        margin: auto;
+        gap: 10px;                 
+    }
+    .chocolates-header h2 {
+        font-size: 10px;           
+    }
+    .header-arrows {
+        display: none;              
+    }
+.chocolate-card {
+    position: relative;
+    width: 270px;
+    height: 350px;
+
+}
+.details-bottom{
+  font-size: 12px;
 }
 }
 
